@@ -6,8 +6,8 @@ class Content extends HTMLElement {
     render() {
         this.innerHTML = `
         <div class="content">
-            <h1>Every Color has a Meaning</h1>
-            <p>Type your favorite color and know your personality</p>
+            <h1>Stay Hungry Stay Productive</h1>
+            <p>Type your favorite food and know its information</p>
         </div>`;
     }
 }

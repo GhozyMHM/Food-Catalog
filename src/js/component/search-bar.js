@@ -17,7 +17,7 @@ class SearchBar extends HTMLElement {
         <div class="search-bar">
             <input id="search-bar" type="search" placeholder="Ex : Blue, Green, Red, etc" spellcheck="false">
             <button id="button-search" type="submit">Search</button>
-            <p>See the color list you can choose <a href="">here</a></p>
+            <p>See the food list you can choose <a href="">here</a></p>
         </div>`
 
         this.querySelector("#button-search").addEventListener("click", this._clickEvent);

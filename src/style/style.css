@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 * {
     margin: 0;
@@ -12,7 +12,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    background-color: #5FA7BF;
+    background-color: rgb(243, 240, 240)
 }
 
 nav-bar {
@@ -27,7 +27,14 @@ nav-bar {
 .navbar-brand {
     font-family: 'Carter One', cursive;
     font-size: 30px;
-    color: rgba(255, 255, 255, 0.767) !important;
+    color: #4ca04d !important;
+    padding: 0 12px !important;
+    border-radius: 8px !important;
+    text-decoration: underline;
+}
+
+.navbar-brand:hover {
+    text-decoration: underline;
 }
 
 nav ul li {
@@ -43,7 +50,8 @@ nav ul li a {
 
 nav ul li.active a,
 nav ul li a:hover {
-    background-color: purple !important;
+    background-color: white !important;
+    color: #09880b !important;
     border-radius: 5px;
 }
 
@@ -58,7 +66,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* Picture Credit = By Harli Marten on Unsplash */
+    /* Picture Credit = By Lukas Blazek on Unsplash */
     background-image: url(img/banner.PNG);
     background-size: cover;
     background-position: center;
@@ -76,9 +84,9 @@ main {
 }
 
 .content h1 {
-    font-family: 'Courgette', cursive;
+    font-family: 'Libre Baskerville', serif;
     font-weight: bold;
-    color: purple;
+    color: #09880b;
     font-size: 55px;
 }
 
@@ -86,12 +94,13 @@ main {
     font-family: 'Balsamiq Sans', cursive;
     font-size: 22px;
     margin: 5px 0;
+    color: #2f6430;
 }
 
 input {
     width: 60vw;
     height: 50px;
-    border-color: purple;
+    border-color: #09880b;
     border-radius: 8px;
     outline: none;
     font-size: 17px;
@@ -102,8 +111,8 @@ input {
 main button {
     width: 10vw;
     height: 50px;
-    background-color: purple;
-    border-color: purple;
+    background-color: #09880b;
+    border-color: #09880b;
     color: rgba(255, 255, 255, 0.925);
     border-radius: 8px;
     outline: none;
@@ -115,32 +124,20 @@ main button {
 main button:hover {
     background-color: rgba(255, 255, 255, 0.925);
     border-color: rgba(255, 255, 255, 0.925);
-    color: purple;
+    color: #09880b;
 }
 
 .search-bar p {
     font-family: 'Balsamiq Sans', cursive;
-    font-size: 17px;
-    color: purple;
+    font-size: 18px;
+    color: #2f6430;
     margin: 10px 0;
     text-align: center;
 }
 
 .search-bar p a {
-    color: rgb(206, 98, 134);
-}
-
-aside {
-    height: 65vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* Picture Credit = By Harli Marten on Unsplash */
-    background-image: url(img/banner2.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    color: #2f6430;
+    text-decoration: underline;
 }
 
 result-container {
@@ -161,7 +158,7 @@ the-result {
     background-color: rgb(243, 240, 240);
     position: absolute;
     top: 20px;
-    border: 2px solid purple;
+    border: 2px solid #09880b;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 30px;
@@ -175,20 +172,20 @@ the-result {
 
 the-result h1 {
     font-family: 'Carter One', cursive;
-    color: purple;
+    color: #09880b;
     margin-top: 25px;
 }
 
 the-result p {
     font-family: 'Balsamiq Sans', cursive;
-    color: purple;
+    color: #09880b;
     font-size: 17px;
 }
 
 .date {
     font-size: 17px;
     font-family: 'Balsamiq Sans', cursive;
-    color: rgb(109, 10, 109);
+    color: #2f6430;
     font-style: italic;
     margin-bottom: 70px;
     display: block;
