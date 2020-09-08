@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #5FA7BF;
+}
+
+nav-bar {
+    display: block !important;
+}
+
+.navig {
+    background-color: transparent;
+    padding: 20px 50px;
+}
+
+.navbar-brand {
+    font-family: 'Carter One', cursive;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.767) !important;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255) !important;
+}
+
+nav ul li.active a,
+nav ul li a:hover {
+    background-color: purple !important;
+    border-radius: 5px;
+}
+
+nav button.navbar-toggler:focus,
+nav button.navbar-toggler:active {
+    outline: none !important;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Picture Credit = By Harli Marten on Unsplash */
+    background-image: url(img/banner.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content h1 {
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    color: purple;
+    font-size: 55px;
+}
+
+.content p {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+input {
+    width: 60vw;
+    height: 50px;
+    border-color: purple;
+    border-radius: 8px;
+    outline: none;
+    font-size: 17px;
+    padding: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+main button {
+    width: 10vw;
+    height: 50px;
+    background-color: purple;
+    border-color: purple;
+    color: rgba(255, 255, 255, 0.925);
+    border-radius: 8px;
+    outline: none;
+    font-size: 17px;
+    padding: 10px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+main button:hover {
+    background-color: rgba(255, 255, 255, 0.925);
+    border-color: rgba(255, 255, 255, 0.925);
+    color: purple;
+}
+
+.search-bar p {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 17px;
+    color: purple;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.search-bar p a {
+    color: rgb(206, 98, 134);
+}
+
+aside {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Picture Credit = By Harli Marten on Unsplash */
+    background-image: url(img/banner2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+result-container {
+    margin-top: 32px;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+the-result {
+    display: block;
+    width: 70vw;
+    height: auto;
+    background-color: rgb(243, 240, 240);
+    position: absolute;
+    top: 20px;
+    border: 2px solid purple;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.color {
+    width: 100%;
+    height: 25vh;
+    border-radius: 8px;
+}
+
+the-result h1 {
+    font-family: 'Carter One', cursive;
+    color: purple;
+    margin-top: 25px;
+}
+
+the-result p {
+    font-family: 'Balsamiq Sans', cursive;
+    color: purple;
+    font-size: 17px;
+}
+
+.date {
+    font-size: 17px;
+    font-family: 'Balsamiq Sans', cursive;
+    color: rgb(109, 10, 109);
+    font-style: italic;
+    margin-bottom: 70px;
+    display: block;
+}
+
+@media (max-width: 991px) {
+
+    html,
+    body {
+        background-color: #1C68A8;
+    }
+
+    .navbar-brand {
+        color: rgb(109, 9, 92) !important;
+    }
+
+    nav ul li a {
+        padding: 10px !important;
+    }
+
+    main {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .navig {
+        padding: 15px;
+    }
+
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .content h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .content p {
+        font-size: 15px;
+        margin: 5px 0;
+    }
+
+    input {
+        width: 60vw;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    main button {
+        width: 25vw;
+        height: 50px;
+        font-size: 17px;
+    }
+
+    the-result {
+        width: 85vw;
+    }
+}
