@@ -142,7 +142,7 @@ result-container {
     align-items: center;
     flex-wrap: wrap;
     position: absolute;
-    top: 90vh;
+    top: 95vh;
     overflow: hidden;
 }
 
