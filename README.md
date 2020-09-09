@@ -10,3 +10,13 @@ Features & Technology Used :
 - Custom Component
 - Public API
 - AJAX (Fetch)
+
+How to try this website :
+
+- Install Node.js in your laptop / pc
+- Download this code
+- Open the directory with your code editor
+- Type this in terminal : 
+1. npm install
+2. npm run build
+3. npm run start-dev
