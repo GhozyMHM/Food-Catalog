@@ -1,26 +1,22 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/style.css";
 import "./component/nav-bar.js";
 import "./component/show-date.js";
 import "./component/title-content.js";
 import $ from "jquery";
-import moment from "moment";
+import 'popper.js';
+import "bootstrap/dist/js/bootstrap.min.js";
 import main from "./main.js";
 
 document.addEventListener("DOMContentLoaded", main);
 
-var navbar = document.getElementsByClassName('navig')[0]
-
-window.onscroll = function () {
-    if (window.pageYOffset > 10) {
-        navbar.style.background = "#6da06e98";
-    } else {
-        navbar.style.background = "transparent";
-    }
-}
-
-const displayDate = () => {
-    moment.locale("id");
-    $(".date").text(moment().format("LL"));
-};
-
-displayDate();
+$(document).ready(function () {
+    $(window).scroll(function () {
+        let scroll = $(window).scrollTop();
+        if (scroll > 10) {
+            $(".navig").css("background", "#6da06e98");
+        } else {
+            $(".navig").css("background", "transparent");
+        }
+    })
+})
