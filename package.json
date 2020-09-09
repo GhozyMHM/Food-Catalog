@@ -1,7 +1,7 @@
 {
-  "name": "color-personality",
+  "name": "food-catalog",
   "version": "1.0.0",
-  "description": "Know your personality by typing your favorite color in this website",
+  "description": "Search your favorite meal and you'll know how to cook it",
   "main": "app.js",
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js --open",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GhozyMHM/Color-Personality.git"
+    "url": "git+https://github.com/GhozyMHM/Food-Catalog.git"
   },
   "author": "GhozyMHM",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GhozyMHM/Color-Personality/issues"
+    "url": "https://github.com/GhozyMHM/Food-Catalog/issues"
   },
-  "homepage": "https://github.com/GhozyMHM/Color-Personality#readme",
+  "homepage": "https://github.com/GhozyMHM/Food-Catalog#readme",
   "dependencies": {
     "bootstrap": "^4.5.2",
     "file-loader": "^6.1.0",
