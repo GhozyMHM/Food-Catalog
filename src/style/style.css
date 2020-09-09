@@ -71,7 +71,7 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 110px;
+    padding-top: 90px;
     flex-wrap: wrap;
 }
 
@@ -127,17 +127,10 @@ main button:hover {
     color: #09880b;
 }
 
-.search-bar p {
-    font-family: 'Balsamiq Sans', cursive;
-    font-size: 18px;
-    color: #2f6430;
-    margin: 10px 0;
+.scroll-alert {
+    width: 35vw !important;
     text-align: center;
-}
-
-.search-bar p a {
-    color: #2f6430;
-    text-decoration: underline;
+    margin: 0 auto;
 }
 
 result-container {
@@ -148,7 +141,9 @@ result-container {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    position: relative;
+    position: absolute;
+    top: 90vh;
+    overflow: hidden;
 }
 
 the-result {
@@ -156,21 +151,26 @@ the-result {
     width: 70vw;
     height: auto;
     background-color: rgb(243, 240, 240);
-    position: absolute;
     top: 20px;
     border: 2px solid #09880b;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.color {
-    width: 100%;
-    height: 25vh;
-    border-radius: 8px;
+the-result img {
+    width: 300px;
+    text-align: center;
 }
 
-the-result h1 {
+the-result h1,
+the-result h3 {
     font-family: 'Carter One', cursive;
     color: #09880b;
     margin-top: 25px;
@@ -192,22 +192,21 @@ the-result p {
 }
 
 @media (max-width: 991px) {
-
-    html,
-    body {
-        background-color: #1C68A8;
-    }
-
-    .navbar-brand {
-        color: rgb(109, 9, 92) !important;
-    }
-
     nav ul li a {
         padding: 10px !important;
     }
 
     main {
         padding-top: 10px;
+    }
+
+    .content h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    result-container {
+        top: 100vh;
     }
 }
 
@@ -232,6 +231,53 @@ the-result p {
 
     input {
         width: 60vw;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    main button {
+        width: 25vw;
+        height: 50px;
+        font-size: 17px;
+    }
+
+    .scroll-alert {
+        width: 60vw !important;
+        font-size: 15px !important;
+    }
+
+    the-result {
+        width: 85vw;
+    }
+
+    the-result img {
+        width: 200px;
+    }
+
+    the-result p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 350px) {
+    .navig {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 13px;
+    }
+
+    input {
+        width: 55vw;
         height: 50px;
         font-size: 15px;
     }

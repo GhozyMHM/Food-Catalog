@@ -7,7 +7,7 @@ class Content extends HTMLElement {
         this.innerHTML = `
         <div class="content">
             <h1>Stay Hungry Stay Productive</h1>
-            <p>Type your favorite food and know its information</p>
+            <p>Search your favorite meal and cook it!</p>
         </div>`;
     }
 }

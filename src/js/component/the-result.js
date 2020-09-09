@@ -6,9 +6,10 @@ class TheResult extends HTMLElement {
 
     render() {
         this.innerHTML = `
-                <div class="color" style="background-color: ${this._color.color};"></div>
-                <h1>${this._color.heading}</h1>
-                <p>${this._color.desc}</p>`;
+            <img src="${this._color.strMealThumb}" alt="">
+            <h1>${this._color.strMeal}</h1>
+            <h3>How to Cook :</h3>
+            <p>${this._color.strInstructions}</p>`;
     }
 }
 

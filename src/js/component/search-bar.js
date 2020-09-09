@@ -15,9 +15,11 @@ class SearchBar extends HTMLElement {
     render() {
         this.innerHTML = `
         <div class="search-bar">
-            <input id="search-bar" type="search" placeholder="Ex : Blue, Green, Red, etc" spellcheck="false">
+            <input id="search-bar" type="search" placeholder="Ex : Donut, Beef, Salmon, etc" spellcheck="false">
             <button id="button-search" type="submit">Search</button>
-            <p>See the food list you can choose <a href="">here</a></p>
+            <div class="alert alert-success mt-2 scroll-alert" role="alert">
+            Search and scroll down to see the result, thank you!
+            </div>
         </div>`
 
         this.querySelector("#button-search").addEventListener("click", this._clickEvent);
