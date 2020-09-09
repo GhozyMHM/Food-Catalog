@@ -1,8 +1,8 @@
 import "./the-result.js";
 
 class ResultContainer extends HTMLElement {
-    set colorResults(colorResults) {
-        this._colorResults = colorResults;
+    set mealResults(mealResults) {
+        this._mealResults = mealResults;
         this.render();
     }
 
@@ -13,9 +13,9 @@ class ResultContainer extends HTMLElement {
 
     render() {
         this.innerHTML = "";
-        this._colorResults.forEach(color => {
+        this._mealResults.forEach(meal => {
             const resultElement = document.createElement("the-result");
-            resultElement.color = color
+            resultElement.meal = meal
             this.appendChild(resultElement);
         })
     }

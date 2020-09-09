@@ -1,7 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/style.css";
 import "./component/nav-bar.js";
-import "./component/show-date.js";
 import "./component/title-content.js";
 import $ from "jquery";
 import 'popper.js';

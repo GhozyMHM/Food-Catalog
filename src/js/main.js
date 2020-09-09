@@ -7,13 +7,13 @@ const main = () => {
     const resultContainerElement = document.querySelector("result-container");
 
     const onButtonSearchClicked = () => {
-        Data.searchColor(searchElement.value)
+        Data.searchMeal(searchElement.value)
             .then(renderResult)
             .catch(fallbackResult)
     };
 
     const renderResult = (results) => {
-        resultContainerElement.colorResults = results;
+        resultContainerElement.mealResults = results;
     };
 
     const fallbackResult = message => {
