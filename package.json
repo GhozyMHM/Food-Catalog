@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/GhozyMHM/Color-Personality#readme",
   "dependencies": {
+    "bootstrap": "^4.5.2",
     "file-loader": "^6.1.0",
     "jquery": "^3.5.1",
     "moment": "^2.27.0",
+    "popper.js": "^1.16.1",
     "url-loader": "^4.1.0"
   },
   "devDependencies": {
